@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add animation to elements when they come into view
     const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.skill-category, .project-item, .experience-item, .education-item, .hobby-item');
+        const elements = document.querySelectorAll('.skill-category, .project-item, .experience-item, .education-item, .cert-item, .hobby-item');
         
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -143,11 +143,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update navbar style on scroll
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
-            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.45)';
+            navbar.style.background = 'rgba(15, 23, 42, 0.92)';
+            navbar.style.backdropFilter = 'blur(20px)';
+            navbar.style.webkitBackdropFilter = 'blur(20px)';
         } else {
             navbar.style.boxShadow = 'none';
-            navbar.style.background = 'white';
+            navbar.style.background = 'rgba(15, 23, 42, 0.72)';
+            navbar.style.backdropFilter = 'blur(18px)';
+            navbar.style.webkitBackdropFilter = 'blur(18px)';
         }
     });
     
@@ -184,4 +188,4 @@ document.addEventListener('DOMContentLoaded', function() {
             // Otherwise let the browser handle the link normally
         });
     });
-}); 
+});
