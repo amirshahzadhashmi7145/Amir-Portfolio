@@ -1,386 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amir Shahzad Hashmi - Portfolio</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Amir Shahzad Hashmi — Software Engineer @ Coders Alley | AI, Automation & Web Development | COMSATS University Islamabad (BSCS)">
-    <meta name="theme-color" content="#030712">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Shahzad Hashmi, Software Engineer: AI automation and back-end systems</title>
+  <meta name="description" content="Software engineer in Lahore building agentic LLM systems, workflow automation and back-end APIs in production. Python, FastAPI, Node.js, React, SQL and NoSQL.">
+  <link rel="canonical" href="https://amirshahzadhashmi7145.github.io/Amir-Portfolio/">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F6F4">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0E1116">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Amir Shahzad Hashmi, Software Engineer: AI automation and back-end systems">
+  <meta property="og:description" content="Software engineer in Lahore building agentic LLM systems, workflow automation and back-end APIs in production. Python, FastAPI, Node.js, React, SQL and NoSQL.">
+  <meta property="og:url" content="https://amirshahzadhashmi7145.github.io/Amir-Portfolio/">
+  <meta property="og:image" content="https://amirshahzadhashmi7145.github.io/Amir-Portfolio/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amir Shahzad Hashmi, Software Engineer: AI automation and back-end systems">
+  <meta name="twitter:description" content="Software engineer in Lahore building agentic LLM systems, workflow automation and back-end APIs in production. Python, FastAPI, Node.js, React, SQL and NoSQL.">
+  <meta name="twitter:image" content="https://amirshahzadhashmi7145.github.io/Amir-Portfolio/assets/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amir Shahzad Hashmi",
+    "jobTitle": "Software Engineer",
+    "url": "https://amirshahzadhashmi7145.github.io/Amir-Portfolio/",
+    "sameAs": [
+      "https://github.com/amirshahzadhashmi7145",
+      "https://www.linkedin.com/in/amir-shahzad-hashmi",
+      "https://leetcode.com/u/amirshahzadhashmi7145/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lahore",
+      "addressCountry": "PK"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "COMSATS University Islamabad"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Coders Alley"
+    }
+  }
+  </script>
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var stored = localStorage.getItem("theme");
+        if (stored === "dark" || stored === "light") {
+          document.documentElement.setAttribute("data-theme", stored);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  </noscript>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="site-root">
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
+  <svg class="icon-sprite" hidden aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+    </symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+    </symbol>
+    <symbol id="i-leetcode" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c.22.19.328.282.328.282s.218-.092.328-.282l.039-.038 4.277-4.193a5.938 5.938 0 0 0 1.271-1.818 5.83 5.83 0 0 0 .349-1.017 5.527 5.527 0 0 0 .062-2.362 5.35 5.35 0 0 0-.125-.513 5.266 5.266 0 0 0-1.209-2.104L16.884 6.226 11.478.438A1.374 1.374 0 0 0 10.517 0h2.966zm-2.866 12.815a1.2 1.2 0 0 0-.85.352L6.64 16.247a1.2 1.2 0 0 0 1.7 1.7l3.127-3.128a1.2 1.2 0 0 0-.85-2.047z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+    </symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+      <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+    </symbol>
+    <symbol id="i-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/>
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 18 18 6M6 6l12 12"/>
+    </symbol>
+  </svg>
 
-    <header>
-        <div class="hero-backdrop" aria-hidden="true">
-            <div class="hero-monogram-float">
-                <span class="hero-monogram">ASH</span>
-            </div>
-        </div>
-        <div class="container header-inner">
-            <h1 class="fadeInUp">Amir Shahzad Hashmi</h1>
-            <p class="header-pronouns">He/Him</p>
-            <p class="subtitle fadeInUp">Software Engineer @ Coders Alley · AI, Automation &amp; Web Development</p>
-            <p class="header-meta">COMSATS University Islamabad (BSCS) · Lahore, Punjab, Pakistan</p>
-        </div>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav id="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
-                <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i> Certifications</a></li>
-                <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-                <li><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
-                <li><a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
-                <li><a href="#hobbies" class="nav-link"><i class="fas fa-heart"></i> Hobbies</a></li>
-            </ul>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav-bar">
+        <button type="button" class="icon-btn nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-panel" aria-label="Menu">
+          <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+        <div class="nav-panel" id="nav-panel">
+          <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+        <div class="nav-end">
+          <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">
+            <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"></use></svg>
+            <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"></use></svg>
+          </button>
+          <a class="btn-accent" href="assets/Amir_Shahzad_CV.pdf" download>
+            <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
     </nav>
+  </header>
 
-    <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="profile-image">
-                        <img src="Profile.png" alt="Amir Shahzad Hashmi">
-                    </div>
-                    <div class="profile-info">
-                        <h3>PROFILE</h3>
-                        <p>COMSATS University Islamabad has provided a strong foundation in computer science, equipping me with expertise in MERN stack development, Redux.js, and back-end web development. My education emphasizes the practical application of concepts, allowing me to design and build scalable, user-centric solutions.</p>
-                        <p>Through academic projects, I contributed to creating dynamic web applications, mastering MongoDB, Express.js, React.js, and Node.js. Focused on continuous learning, I aim to stay at the forefront of web development trends while driving impactful results in collaborative environments.</p>
-                        
-                        <div class="contact-info">
-                            <p><i class="fas fa-map-marker-alt"></i> Lahore, Punjab, Pakistan</p>
-                            <p><i class="fas fa-phone"></i> +923198754964</p>
-                            <p><i class="fas fa-envelope"></i> amirshahzadhashmi7145@gmail.com</p>
-                        </div>
-                        
-                        <div class="social-links">
-                            <a href="https://github.com/amirshahzadhashmi7145" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="https://www.linkedin.com/in/amir-shahzad-hashmi" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        </div>
-                        
-                        <div class="languages">
-                            <h4>LANGUAGES</h4>
-                            <div class="language-item">
-                                <span>English</span>
-                                <div class="language-level">
-                                    <div class="level-bar" style="width: 85%"></div>
-                                </div>
-                                <span class="level-text">Highly-proficient</span>
-                            </div>
-                            <div class="language-item">
-                                <span>Urdu</span>
-                                <div class="language-level">
-                                    <div class="level-bar" style="width: 100%"></div>
-                                </div>
-                                <span class="level-text">Native speaker</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3>Bachelor of Science — BS, Computer Science</h3>
-                    <p class="institution">COMSATS University Islamabad — Lahore Campus</p>
-                    <p class="period">Sep 2021 – Sep 2025</p>
-                    <p class="location">Lahore</p>
-                    <p class="education-focus">Coursework &amp; focus: MERN Stack, Back-End Web Development, Full-Stack Development, Front-End Development, HTML5, JavaScript, Java, Bootstrap, Tailwind CSS, and related areas.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications" class="section">
-            <div class="container">
-                <h2>Licenses &amp; certifications</h2>
-                <div class="certifications-list">
-                    <div class="cert-item">
-                        <div class="cert-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <h3>Supervised Machine Learning: Regression and Classification</h3>
-                        <p class="cert-issuer">DeepLearning.AI · Stanford University</p>
-                        <p class="cert-meta">Issued Apr 2024</p>
-                        <p class="cert-id">Credential ID: QXZ3LNBFFF7S</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Experience</h2>
-                <div class="timeline">
-                    <div class="experience-item">
-                        <div class="experience-date">
-                            <span>Sep 2025 – Present</span>
-                        </div>
-                        <div class="experience-content">
-                            <h3>Coders Alley</h3>
-                            <p class="description">Software Engineer | AI, Automation &amp; Web Development · Full-time</p>
-                            <p class="experience-meta"><i class="fas fa-map-marker-alt"></i> Lahore, Punjab, Pakistan · On-site</p>
-                            <p class="experience-summary">I build end-to-end solutions that combine AI, automation, and full-stack development. My work includes creating automation workflows, integrating AI and Generative AI features, and developing scalable front-end and back-end systems using Python, JavaScript, and modern frameworks to deliver efficient and user-focused applications.</p>
-                        </div>
-                    </div>
-                    <div class="experience-item">
-                        <div class="experience-date">
-                            <span>July 2021 – Aug 2025</span>
-                        </div>
-                        <div class="experience-content">
-                            <h3>Full-Stack Developer</h3>
-                            <p class="description">Independent &amp; local clients · MERN · Python &amp; JavaScript</p>
-                            <ul>
-                                <li>Built and deployed full-stack web applications using the MERN stack, Python, and JavaScript for diverse business needs.</li>
-                                <li>Delivered workflow automation with n8n, Zapier, and automation patterns alongside client projects.</li>
-                                <li>End-to-end development, server setup, deployment pipelines, and DevOps for reliable delivery.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience-item">
-                        <div class="experience-date">
-                            <span>June 2017 - June 2019</span>
-                        </div>
-                        <div class="experience-content">
-                            <h3>Freelancing (Freelancer.com.pk)</h3>
-                            <p class="description">Wordpress Developer</p>
-                            <ul>
-                                <li>Developed and customized WordPress websites for various clients, focusing on responsive design and performance.</li>
-                                <li>Handled theme customization, plugin integration, and site optimization to meet client requirements.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <div class="project-icon">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <h3>Peace-Market.com</h3>
-                        <p class="project-type">E-commerce Platform with Referral System & JazzCash Integration</p>
-                        <p class="description">Developed a full-featured e-commerce platform with a multi-level referral system, enabling users to earn through network-based commissions. Integrated JazzCash for secure, real-time payment processing and managed backend logic, frontend UI, and server deployment.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>JazzCash API</span>
-                        </div>
-                        <a href="https://peace-market.com" class="project-link" target="_blank">Visit Project <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h3>SecureChat</h3>
-                        <p class="project-type">Real-Time Web Chat Application using MERN & WebSockets</p>
-                        <p class="description">Built a secure, web-based chat application using the MERN stack with real-time communication powered by WebSockets. Implemented features like live messaging, user authentication, and message persistence for a smooth and responsive user experience.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Express</span>
-                            <span>MongoDB</span>
-                            <span>WebSockets</span>
-                        </div>
-                        <a href="https://github.com/amirshahzadhashmi7145/SecureChat" class="project-link" target="_blank">Visit Project <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category skill-category--featured">
-                        <div class="skill-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h3>Top skills</h3>
-                        <ul class="skills-list">
-                            <li>MERN Stack</li>
-                            <li>Redux.js</li>
-                            <li>Agentic AI Development</li>
-                            <li>Generative AI</li>
-                            <li>Vertex AI</li>
-                            <li>n8n</li>
-                            <li>Zapier</li>
-                            <li>Workflow Automation</li>
-                            <li>Automation</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>AI &amp; data</h3>
-                        <ul class="skills-list">
-                            <li>Generative AI</li>
-                            <li>Agentic AI Development</li>
-                            <li>Vertex AI</li>
-                            <li>Google APIs</li>
-                            <li>Google Analytics</li>
-                            <li>Pandas</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3>Automation &amp; integrations</h3>
-                        <ul class="skills-list">
-                            <li>n8n</li>
-                            <li>Zapier</li>
-                            <li>Workflow Automation</li>
-                            <li>Automation</li>
-                            <li>Intercom</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Frontend &amp; desktop</h3>
-                        <ul class="skills-list">
-                            <li>React.js</li>
-                            <li>Redux.js</li>
-                            <li>HTML5</li>
-                            <li>JavaScript</li>
-                            <li>Bootstrap</li>
-                            <li>Tailwind CSS</li>
-                            <li>Electron.js</li>
-                            <li>Front-End Development</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Backend &amp; database</h3>
-                        <ul class="skills-list">
-                            <li>Node.js</li>
-                            <li>Django</li>
-                            <li>Express.js</li>
-                            <li>MongoDB</li>
-                            <li>SQL</li>
-                            <li>Back-End Web Development</li>
-                            <li>Full-Stack Development</li>
-                            <li>MERN Stack</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3>Cloud &amp; DevOps</h3>
-                        <ul class="skills-list">
-                            <li>Google Cloud Platform (GCP)</li>
-                            <li>Amazon Web Services (AWS)</li>
-                            <li>DevOps</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Languages &amp; tools</h3>
-                        <ul class="skills-list">
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>Java</li>
-                            <li>SQL</li>
-                            <li>C</li>
-                            <li>C++</li>
-                            <li>C#</li>
-                            <li>Dart</li>
-                            <li>VSCode</li>
-                            <li>GitHub</li>
-                            <li>Docker</li>
-                            <li>CI/CD</li>
-                            <li>GitHub Actions</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <div class="skill-icon">
-                            <i class="fas fa-users-cog"></i>
-                        </div>
-                        <h3>General &amp; collaboration</h3>
-                        <ul class="skills-list">
-                            <li>Object-Oriented Programming</li>
-                            <li>Data Structures &amp; Algorithms</li>
-                            <li>Agile Collaboration</li>
-                            <li>Scalable Architecture</li>
-                            <li>Version Control</li>
-                            <li>Teamwork</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="hobbies" class="section">
-            <div class="container">
-                <h2>Hobbies</h2>
-                <div class="hobbies-container">
-                    <div class="hobby-item">
-                        <i class="fas fa-gamepad"></i>
-                        <p>Video Games</p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fas fa-plane"></i>
-                        <p>Travelling</p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fas fa-book"></i>
-                        <p>Book Reading</p>
-                    </div>
-                    <div class="hobby-item">
-                        <i class="fas fa-brain"></i>
-                        <p>Philosophy</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year">2023</span> Amir Shahzad Hashmi. All rights reserved.</p>
-            <div class="social-links-footer">
-                <a href="https://github.com/amirshahzadhashmi7145" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/amir-shahzad-hashmi" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-            </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-name">Amir Shahzad Hashmi</h1>
+          <p class="hero-tagline">Software engineer building AI automation and back-end systems that run in production.</p>
+          <p class="hero-intro">I design agentic LLM systems, workflow automation and the APIs around them. Five years of full-stack delivery with Python, FastAPI, Node.js, React and SQL and NoSQL databases.</p>
+          <p class="hero-actions">
+            <a href="mailto:amirshahzadhashmi7145@gmail.com">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+              Email me
+            </a>
+            <a class="btn-accent" href="assets/Amir_Shahzad_CV.pdf" download>
+              <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+              Download CV
+            </a>
+            <a href="https://github.com/amirshahzadhashmi7145" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/amir-shahzad-hashmi" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+              LinkedIn
+            </a>
+            <a href="https://leetcode.com/u/amirshahzadhashmi7145/" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-leetcode"></use></svg>
+              LeetCode
+            </a>
+          </p>
+          <p class="hero-meta">Lahore, Pakistan. Open to remote roles.</p>
         </div>
-    </footer>
+        <div class="hero-visual">
+          <svg class="hero-diagram" viewBox="0 0 560 420" width="100%" role="img" aria-label="Flow diagram of a hierarchical agentic RAG support agent. A customer message from an embedded chat widget is classified and routed by Haiku, then Sonnet performs agentic reasoning with tool calls to knowledge retrieval and a FastAPI SQLite storefront API, producing a grounded reply to the customer.">
+            <g class="diagram-node n1">
+              <rect class="diagram-box" x="160" y="18" width="240" height="40" rx="6"/>
+              <text x="280" y="42" text-anchor="middle">Customer message</text>
+            </g>
+            <text class="diagram-sub diagram-node n1" x="280" y="72" text-anchor="middle">embedded chat widget</text>
+            <path class="diagram-edge e1" pathLength="1" d="M280 58 L280 88"/>
+            <g class="diagram-node n2">
+              <rect class="diagram-box" x="140" y="88" width="280" height="40" rx="6"/>
+              <text x="280" y="112" text-anchor="middle">Haiku: classify and route</text>
+            </g>
+            <path class="diagram-edge e2" pathLength="1" d="M280 128 L280 156"/>
+            <g class="diagram-node n3">
+              <rect class="diagram-box" x="70" y="156" width="420" height="40" rx="6"/>
+              <text x="280" y="180" text-anchor="middle">Sonnet: agentic reasoning + tool calls</text>
+            </g>
+            <path class="diagram-edge e3" pathLength="1" d="M280 196 L280 216 L130 216 L130 248"/>
+            <path class="diagram-edge e4" pathLength="1" d="M280 196 L280 216 L430 216 L430 248"/>
+            <g class="diagram-node n4">
+              <rect class="diagram-box" x="30" y="248" width="200" height="40" rx="6"/>
+              <text x="130" y="272" text-anchor="middle">Knowledge retrieval</text>
+            </g>
+            <g class="diagram-node n5">
+              <rect class="diagram-box" x="310" y="248" width="240" height="52" rx="6"/>
+              <text text-anchor="middle">
+                <tspan x="430" y="268">Storefront API</tspan>
+                <tspan x="430" y="286">FastAPI + SQLite</tspan>
+              </text>
+            </g>
+            <path class="diagram-edge e5" pathLength="1" d="M130 288 L130 322 L280 322 L280 346"/>
+            <path class="diagram-edge e6" pathLength="1" d="M430 300 L430 322 L280 322"/>
+            <g class="diagram-node n6">
+              <rect class="diagram-box" x="120" y="346" width="320" height="40" rx="6"/>
+              <text x="280" y="370" text-anchor="middle">Grounded reply to the customer</text>
+            </g>
+          </svg>
+          <p class="hero-caption">Hierarchical agentic RAG support agent, built on native Anthropic API tool calling.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Scroll to top button -->
-    <div class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="section-inner">
+        <h2 id="work-title">Work</h2>
+        <div class="section-body">
+          <article class="card">
+            <h3>AI-powered customer support agent</h3>
+            <p class="card-client">Client: Nexar</p>
+            <p class="card-summary">A hierarchical agentic RAG system that answers customer support requests through an embedded chat widget.</p>
+            <dl class="fact-list">
+              <div>
+                <dt>Problem</dt>
+                <dd>Support requests needed accurate, grounded answers without routing every message through the most expensive model or a heavyweight orchestration framework.</dd>
+              </div>
+              <div>
+                <dt>What I built</dt>
+                <dd>A hierarchical agentic RAG pipeline on native Anthropic API tool calling, with no LangChain or third-party orchestration layer. Haiku classifies and routes incoming requests; Sonnet handles agentic reasoning and tool use. Delivered with a full-stack demo storefront (React front end, FastAPI back end, SQLite) and an Intercom-style embedded chat widget.</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>Python, FastAPI, SQLite, React, Anthropic API</dd>
+              </div>
+            </dl>
+            <p class="private-note">Client work; code is private. Happy to walk through the architecture on a call.</p>
+          </article>
 
+          <article class="card">
+            <h3>NexClick Ops: internal support tooling platform</h3>
+            <p class="card-client">Client: Nexar</p>
+            <p class="card-summary">One internal interface for support agents to trigger back-end operations across four systems.</p>
+            <dl class="fact-list">
+              <div>
+                <dt>Problem</dt>
+                <dd>Support agents were handling order cancellations, refunds and fulfillment checks by hand across separate platforms.</dd>
+              </div>
+              <div>
+                <dt>What I built</dt>
+                <dd>A permissions and actions platform that gives agents a single interface and integrates Shopify (order cancellation, refunds, metafields), Intercom (attribute writes), Fulfillrite (fulfillment polling) and BigQuery (audit logging), replacing fragmented manual processes.</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>Shopify API, Intercom API, Fulfillrite, BigQuery</dd>
+              </div>
+            </dl>
+            <p class="private-note">Client work; code is private. Happy to walk through the architecture on a call.</p>
+          </article>
+
+          <article class="card">
+            <h3>AI-powered workforce analytics dashboard</h3>
+            <p class="card-summary">A dashboard that turns workforce data for 500+ employees into performance patterns and retention signals.</p>
+            <dl class="fact-list">
+              <div>
+                <dt>Problem</dt>
+                <dd>Management needed a readable view of performance patterns and retention risk across a large workforce.</dd>
+              </div>
+              <div>
+                <dt>What I built</dt>
+                <dd>A dashboard processing data for 500+ employees, using Python and LLM-driven analysis to surface performance patterns and flag retention risk for management decisions.</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>Python, LLM-driven analysis</dd>
+              </div>
+            </dl>
+            <!-- TODO: Amir to confirm whether a public repo or demo exists -->
+          </article>
+
+          <div class="subsection">
+            <h3>Earlier projects</h3>
+            <div class="earlier-grid">
+              <article class="card">
+                <h3>Peace-Market.com</h3>
+                <p>E-commerce platform with a multi-level referral system and JazzCash payment integration. Built the backend logic, front-end UI and server deployment.</p>
+                <p><strong>Stack:</strong> React, Node.js, MongoDB, JazzCash API.</p>
+                <p>
+                  <a href="https://peace-market.com" target="_blank" rel="noopener noreferrer">
+                    peace-market.com
+                    <svg class="icon" aria-hidden="true"><use href="#i-external-link"></use></svg>
+                  </a>
+                </p>
+              </article>
+              <article class="card">
+                <h3>SecureChat</h3>
+                <p>Real-time web chat application on the MERN stack with WebSockets, covering live messaging, user authentication and message persistence.</p>
+                <p><strong>Stack:</strong> React, Express, MongoDB, WebSockets.</p>
+                <p>
+                  <a href="https://github.com/amirshahzadhashmi7145/SecureChat" target="_blank" rel="noopener noreferrer">
+                    GitHub repository
+                    <svg class="icon" aria-hidden="true"><use href="#i-external-link"></use></svg>
+                  </a>
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="section-inner">
+        <h2 id="experience-title">Experience</h2>
+        <div class="section-body">
+          <ol class="timeline">
+            <li>
+              <div class="role-head">
+                <h3>Software Engineer (AI, Automation &amp; Web Development), Coders Alley</h3>
+                <p class="role-dates">Sep 2025 to Present</p>
+              </div>
+              <p class="role-meta">Full-time, remote. Client: Nexar.</p>
+              <ul>
+                <li>Design and build Python back-end services and automation workflows that integrate Shopify, Intercom, Recurly and Fulfillrite through their APIs, replacing manual, cross-platform support and operations processes.</li>
+                <li>Develop scalable back-end and front-end components in Python (FastAPI) and JavaScript (React), including internal tooling that gives support agents a single interface for back-end operations across systems.</li>
+                <li>Ship AI-powered support automation and generative AI features into production, built on the Anthropic API with native tool calling rather than third-party orchestration frameworks.</li>
+                <li>Own features end to end, from design and API integration through production release, in a remote client team.</li>
+              </ul>
+            </li>
+            <li>
+              <div class="role-head">
+                <h3>MERN Stack Developer, independent and local clients</h3>
+                <p class="role-dates">Jul 2021 to Aug 2025</p>
+              </div>
+              <ul>
+                <li>Built and deployed full-stack web applications for local clients with MongoDB, Express, React and Node.js.</li>
+                <li>Designed database schemas and back-end APIs, plus Firebase authentication and real-time features over WebSockets.</li>
+                <li>Delivered workflow automation with n8n and Zapier alongside client projects.</li>
+                <li>Handled server setup, deployment pipelines and basic DevOps tasks for stable, scalable production performance.</li>
+              </ul>
+            </li>
+            <li>
+              <div class="role-head">
+                <h3>Freelance WordPress Developer, Freelancer.com.pk</h3>
+                <p class="role-dates">Jun 2017 to Jun 2019</p>
+              </div>
+              <ul>
+                <li>Developed and customized responsive WordPress sites for clients: theme customization, plugin integration and performance optimization.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="section-inner">
+        <h2 id="skills-title">Skills</h2>
+        <div class="section-body">
+          <ul class="skill-list">
+            <li><strong>Languages:</strong> Python, JavaScript, Java, SQL, C#, C/C++</li>
+            <li><strong>Back end and APIs:</strong> FastAPI, Node.js, Express, REST APIs, WebSockets, third-party API integration (Shopify, Intercom, Recurly, Fulfillrite), Firebase</li>
+            <li><strong>AI and automation:</strong> Anthropic API (native tool calling), agentic RAG, LLM pipelines, generative AI integration, workflow automation, n8n, Zapier, Vertex AI</li>
+            <li><strong>Front end:</strong> React, Next.js, Redux, HTML, CSS, Tailwind CSS, Bootstrap, responsive UI</li>
+            <li><strong>Databases:</strong> SQL, SQLite, MongoDB, Firebase, BigQuery, database design</li>
+            <li><strong>Cloud and DevOps:</strong> AWS, GCP, Docker, CI/CD with GitHub Actions, server setup and deployment pipelines</li>
+            <li><strong>Practices:</strong> object-oriented design, data structures and algorithms, scalable architecture, Agile collaboration, Git and GitHub</li>
+          </ul>
+          <!-- TODO: Amir to confirm whether to list Django, Electron.js, Google Analytics, Pandas and Dart -->
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-inner">
+        <h2 id="about-title">About</h2>
+        <div class="section-body">
+          <div class="about-top">
+            <picture>
+              <source type="image/webp" srcset="assets/profile-480.webp 480w, assets/profile-960.webp 960w" sizes="240px">
+              <img class="about-photo" src="assets/profile-480.jpg" alt="Amir Shahzad Hashmi" width="240" height="240" loading="lazy" decoding="async">
+            </picture>
+            <div class="bio">
+              <p>I'm a software engineer in Lahore, Pakistan. For the past year I've worked with Nexar through Coders Alley on Python back-end services, third-party API integrations and internal tooling, including AI features that run in production. Before that I spent four years building MERN-stack applications for local clients, from database design to deployment.</p>
+              <p>I like owning a system from data model to production and keeping it maintainable once it's live, and I'd rather build directly on a well-understood API than hide it behind an abstraction layer I can't debug. Off the clock: video games, travel, reading and philosophy.</p>
+            </div>
+          </div>
+          <div class="about-block">
+            <h3>Education</h3>
+            <p><strong>BS Computer Science</strong>, COMSATS University Islamabad (Lahore Campus). Aug 2021 to Jun 2026.</p>
+          </div>
+          <div class="about-block">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li>
+                <strong>Supervised Machine Learning: Regression and Classification.</strong>
+                DeepLearning.AI and Stanford Online. Issued Apr 2024. Credential ID QXZ3LNBFFF7S.
+              </li>
+              <li>
+                <strong>Introduction to AI on AMD AI PC.</strong>
+                AMD AI Academy. Issued Sep 2026.
+              </li>
+            </ul>
+            <!-- TODO: Amir to add any other certificates listed on LinkedIn -->
+          </div>
+          <div class="about-block">
+            <h3>Languages</h3>
+            <p>English (highly proficient), Urdu (native).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-inner">
+        <h2 id="contact-title">Contact</h2>
+        <div class="section-body">
+          <p class="section-lead">The fastest way to reach me is email. I reply within a day.</p>
+          <ul class="contact-list">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>
+              <a href="mailto:amirshahzadhashmi7145@gmail.com">amirshahzadhashmi7145@gmail.com</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+              <a href="tel:+923198754964">+92 319 8754964</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>
+              <a href="https://www.linkedin.com/in/amir-shahzad-hashmi" target="_blank" rel="noopener noreferrer">linkedin.com/in/amir-shahzad-hashmi</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+              <a href="https://github.com/amirshahzadhashmi7145" target="_blank" rel="noopener noreferrer">github.com/amirshahzadhashmi7145</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-leetcode"></use></svg>
+              <a href="https://leetcode.com/u/amirshahzadhashmi7145/" target="_blank" rel="noopener noreferrer">leetcode.com/u/amirshahzadhashmi7145</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="current-year">2026</span> Amir Shahzad Hashmi. Built with plain HTML, CSS and JavaScript.</p>
     </div>
-    <script src="script.js"></script>
+  </footer>
+
 </body>
-</html> 
+</html>

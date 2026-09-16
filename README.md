@@ -1,74 +1,42 @@
-# Amir Shahzad Hashmi - Portfolio Website
+# Amir Shahzad Hashmi, portfolio
 
-A responsive, professional portfolio website for Amir Shahzad Hashmi built with HTML, CSS, and JavaScript.
+A static single-page portfolio for Amir Shahzad Hashmi, aimed at software engineering roles in back-end, full-stack and AI automation. Live at [https://amirshahzadhashmi7145.github.io/Amir-Portfolio/](https://amirshahzadhashmi7145.github.io/Amir-Portfolio/).
 
-## Features
+## Run locally
 
-- Single page design with smooth in-page navigation
-- Fully responsive layout that works on all devices
-- Professional and clean design
-- Sections for About, Education, Experience, Projects, Skills, and Hobbies
-- Interactive elements and animations
-- SEO-friendly structure
+From the repo root:
 
-## Technologies Used
+```bash
+npx serve .
+```
 
-- HTML5
-- CSS3 (with CSS variables and Flexbox/Grid layouts)
-- JavaScript (ES6+)
-- Font Awesome for icons
+Or open `index.html` in a browser. There is no build step.
 
-## Deployment Instructions
+## File layout
 
-This portfolio site can be deployed for free using any of the following platforms:
+- `index.html`: all page content and structure
+- `styles.css`: design tokens, layout and print styles
+- `script.js`: theme toggle, mobile nav, active section highlighting, footer year
+- `assets/`: profile image variants, Open Graph image, SVG favicon, and `Amir_Shahzad_CV.pdf` for the Download CV buttons
+- `favicon.ico`: legacy favicon
+- `robots.txt`, `sitemap.xml`: crawling hints for the GitHub Pages URL
 
-### GitHub Pages (Recommended for simplicity)
+## Update content
 
-1. Create a GitHub account if you don't have one
-2. Create a new repository named `username.github.io` (replace "username" with your GitHub username)
-3. Upload all the files from this project to your repository
-4. Go to repository Settings > Pages
-5. Under "Source", select "main" branch
-6. Your site will be published at `https://username.github.io`
+Edit the relevant section in `index.html`:
 
-### Netlify (Recommended for more features)
+- Work case studies and earlier projects: `#work`
+- Jobs: `#experience`
+- Skills groups: `#skills`
+- Bio, education, certifications: `#about`
+- Email, phone and profiles: `#contact`
 
-1. Create a Netlify account
-2. Click "New site from Git"
-3. Connect your GitHub/GitLab/Bitbucket account
-4. Select the repository with your portfolio files
-5. Click "Deploy site"
-6. Your site will be published with a Netlify subdomain (you can add a custom domain later)
+Do not invent projects, metrics or employers. If a fact is missing, leave a `<!-- TODO: Amir to confirm -->` comment.
 
-### Vercel
+## Theme toggle
 
-1. Create a Vercel account
-2. Click "New Project"
-3. Import your repository from GitHub/GitLab/Bitbucket
-4. Click "Deploy"
-5. Your site will be published with a Vercel subdomain (you can add a custom domain later)
+The default theme follows `prefers-color-scheme`. An inline script in `<head>` applies a stored `localStorage.theme` value (`light` or `dark`) before CSS paints, so there is no flash. The nav button then overrides that choice.
 
-## Customization
+## Image variants
 
-- **Colors**: Edit the CSS variables in the `:root` selector in `styles.css`
-- **Content**: Update your personal information in `index.html`
-- **Images**: Replace any images in the `img` folder (if applicable)
-- **Projects**: Update the project links and descriptions in the Projects section
-
-## Local Development
-
-To work on this site locally:
-
-1. Clone or download this repository
-2. Open the folder in your code editor
-3. Open `index.html` in your browser
-
-For live reloading during development, you can use extensions like "Live Server" for VS Code.
-
-## License
-
-This project is available for personal use.
-
----
-
-Created by [Your Name] for Amir Shahzad Hashmi 
+`assets/profile-480.webp` and `assets/profile-960.webp` are used in a `<picture>` element with `assets/profile-480.jpg` as the fallback. The About photo is 240px wide, lazy-loaded, and sits below the fold.
