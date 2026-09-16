@@ -168,6 +168,7 @@ ol {
   width: 0;
   height: 0;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .site-header {
@@ -368,11 +369,13 @@ ol {
 
 .hero-visual {
   min-width: 0;
+  width: 100%;
 }
 
 .hero-diagram {
   width: 100%;
   height: auto;
+  aspect-ratio: 560 / 420;
   display: block;
 }
 
@@ -707,30 +710,16 @@ ol {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .diagram-node {
-    opacity: 0;
-    animation: node-in 0.4s ease forwards;
-  }
-
   .diagram-edge {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    animation: edge-in 0.45s ease forwards;
+    animation: edge-in 0.55s ease forwards;
   }
 
-  .n1 { animation-delay: 0s; }
-  .e1 { animation-delay: 0.25s; }
-  .n2 { animation-delay: 0.5s; }
-  .e2 { animation-delay: 0.75s; }
-  .n3 { animation-delay: 1s; }
-  .e3, .e4 { animation-delay: 1.25s; }
-  .n4, .n5 { animation-delay: 1.55s; }
-  .e5, .e6 { animation-delay: 1.85s; }
-  .n6 { animation-delay: 2.15s; }
-
-  @keyframes node-in {
-    to { opacity: 1; }
-  }
+  .e1 { animation-delay: 0.2s; }
+  .e2 { animation-delay: 0.55s; }
+  .e3, .e4 { animation-delay: 0.95s; }
+  .e5, .e6 { animation-delay: 1.4s; }
 
   @keyframes edge-in {
     to { stroke-dashoffset: 0; }
