@@ -504,6 +504,52 @@ ol {
   max-width: var(--measure);
 }
 
+.project-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-grid .card {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card h3 a {
+  color: var(--ink);
+}
+
+.project-card h3 a:hover {
+  color: var(--accent);
+}
+
+.project-card p {
+  max-width: var(--measure);
+}
+
+.project-stack {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.repo-meta {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.repo-meta .dot {
+  display: inline-block;
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 0.35em;
+  vertical-align: 0.05em;
+}
+
 .timeline {
   list-style: none;
   border-left: 1px solid var(--line);
@@ -634,7 +680,8 @@ ol {
 }
 
 @media (min-width: 720px) {
-  .earlier-grid {
+  .earlier-grid,
+  .project-grid {
     grid-template-columns: 1fr 1fr;
   }
 }

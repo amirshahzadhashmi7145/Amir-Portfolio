@@ -1,6 +1,6 @@
 # Amir Shahzad Hashmi, portfolio
 
-A static single-page portfolio for Amir Shahzad Hashmi, aimed at software engineering roles in back-end, full-stack and AI automation. Live at [https://amirshahzadhashmi7145.github.io/Amir-Portfolio/](https://amirshahzadhashmi7145.github.io/Amir-Portfolio/).
+A static single-page portfolio for Amir Shahzad Hashmi, aimed at AI engineering, back-end and full-stack roles. Live at [https://amirshahzadhashmi7145.github.io/Amir-Portfolio/](https://amirshahzadhashmi7145.github.io/Amir-Portfolio/).
 
 ## Run locally
 
@@ -25,7 +25,8 @@ Or open `index.html` in a browser. There is no build step.
 
 Edit the relevant section in `index.html`:
 
-- Work case studies and earlier projects: `#work`
+- Work case studies: `#work`
+- Open source projects and earlier projects: `#projects` (cards with a `data-repo` attribute get live "updated / language / stars" facts from the GitHub API via `script.js`)
 - Jobs: `#experience`
 - Skills groups: `#skills`
 - Bio, education, certifications: `#about`
